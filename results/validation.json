@@ -45,7 +45,21 @@
     "all_scalar_tags": 40,
     "rendered_pages_visually_checked": true
   },
-  "full_40_clean_environment_evaluation": "running; updated before final publication",
+  "full_40_clean_environment_evaluation": {
+    "status": "passed",
+    "mean_norm_return": 0.7081084573131078,
+    "step_weighted_norm_return": 0.7223706258633308,
+    "failed": 14,
+    "same_per_clip_termination_and_steps": false,
+    "max_clip_return_delta": 0.001102542864785061,
+    "original_cpu_threads": 2,
+    "recipe_cpu_threads": 4,
+    "termination_changes": [
+      "sprint1_subject2: failed@6117 -> complete@13656",
+      "fallAndGetUp3_subject1: failed@2083 -> failed@2084"
+    ],
+    "interpretation": "execution succeeded; average agrees to 4 decimals, but per-clip termination is not bitwise reproducible"
+  },
   "release_download": "pending publication",
   "limits": "Not a second full-length retraining. Other macOS versions/chips and bitwise deterministic scores are unverified."
 }

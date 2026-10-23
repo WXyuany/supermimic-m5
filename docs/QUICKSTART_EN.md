@@ -24,4 +24,6 @@ Run `bash scripts/macos/tensorboard.sh` in another terminal and open http://127.
 
 Published checkpoint 21000: mean normalized return **0.708095**, step-weighted **0.721223**, **25/40** clips complete, **15/40** terminate early. Evaluated on training motions, one seed only. Return is normalized over executed steps, not padded with zeros after failure. Uses 9 extra anchor-relative observation dimensions; not directly comparable to the paper's proprioception-only result. Videos are 20-second previews with independently following cameras. Original training stopped at 21200; public evaluation/video weights remain 21000.
 
+A fresh-environment rerun with the default 4 CPU threads yielded mean 0.708108, weighted 0.722371 and 26/40 complete (original evaluation used 2 threads). One borderline sprint changed termination outcome; both raw results are retained. Bitwise simulation/termination reproducibility is not claimed.
+
 Code is MIT; original LAFAN1 data has CC BY-NC-ND 4.0 terms. No motion data redistributed. See [NOTICE](../NOTICE.md), [per-clip results](../results/benchmark_retuned_21000.json), and [configuration/protocol](REPRODUCIBILITY.md).
