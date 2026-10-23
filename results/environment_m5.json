@@ -1,0 +1,32 @@
+{
+  "project_source": "https://github.com/CuboiLeo/SuperMimic-Reproduced",
+  "commit": "d9be385b3eeb13a638fb33fb200d3bfd9be9839f",
+  "mjlab_commit": "8bb2bc9e187797689ec82c78c35019afd2fd0376",
+  "python": "3.12.15 (main, Oct 21 2026, 17:38:27) [Clang 23.1.3 ]",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "torch": "2.14.1",
+  "mujoco": "3.16.0",
+  "warp": "1.18.0",
+  "mps_available": true,
+  "simulation": "CPU MuJoCo Warp",
+  "learner": "MPS",
+  "dataset": "LAFAN1 G1, 40 clips",
+  "dataset_revision": "ce1572906efe6157840e8474d5a0d7aa87481e74",
+  "patches": [
+    "optional separate env_device and learner replay device bridge",
+    "MPS compiler fusion bound 16 unique I/O buffers",
+    "device-specific synchronization",
+    "atomic checkpoint saves",
+    "resume warmup relative to new simulation steps"
+  ],
+  "validation": {
+    "fk_max_absolute_errors": {
+      "pos": 4.76837158203125e-07,
+      "quat": 6.556510925292969e-07,
+      "lin_vel": 4.898756742477417e-07,
+      "ang_vel": 1.862645149230957e-06,
+      "gradient": 1.1481461115181446e-08
+    },
+    "training_checks": "CPU and MPS smoke checkpoints have real updates and finite parameters"
+  }
+}

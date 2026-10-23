@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-23",
+  "host": "Apple M5 / 24 GB / macOS 27.0 / arm64",
+  "environment": "new project directory and new virtual environment; existing uv package and compiler caches may be reused",
+  "setup": {
+    "bootstrap_without_uv_on_PATH": "passed",
+    "uv_sync_frozen": "passed",
+    "python": "3.12.15",
+    "downloaded_csv": 40,
+    "all_csv_sha256_verified": true,
+    "converted_npz": 40,
+    "conversion_failures": 0,
+    "total_hours": 2.45056,
+    "rerun_idempotence": "passed"
+  },
+  "tests": {
+    "passed": 10,
+    "skipped": 14,
+    "reason": "upstream tests with CUDA or other unavailable prerequisites"
+  },
+  "render": {
+    "checkpoint_iteration": 21000,
+    "clip": "walk1_subject1",
+    "seconds": 2,
+    "frames": 50,
+    "fps": 25,
+    "steps": 100,
+    "failed": false
+  },
+  "mps_training_smoke": {
+    "environments": 32,
+    "wm_batch": 32,
+    "policy_batch": 32,
+    "first_stage_iteration": 50,
+    "first_stage_updates": 4,
+    "resume_iteration": 100,
+    "resume_updates": 8,
+    "lr_schedule_total_iterations": 320000,
+    "all_parameters_finite": true,
+    "resume_new_steps_before_updates": 40,
+    "isolated_from_formal_run": true
+  },
+  "pdf": {
+    "pages": 7,
+    "all_scalar_tags": 40,
+    "rendered_pages_visually_checked": true
+  },
+  "full_40_clean_environment_evaluation": "running; updated before final publication",
+  "release_download": "pending publication",
+  "limits": "Not a second full-length retraining. Other macOS versions/chips and bitwise deterministic scores are unverified."
+}

@@ -1,0 +1,17 @@
+/.venv/
+/.tools/
+/data/
+/logs/
+/checkpoints/
+/work/
+/dist/
+/build/
+__pycache__/
+*.pyc
+*.egg-info/
+*.pt
+*.npz
+.env
+.DS_Store
+.pytest_cache/
+.ruff_cache/

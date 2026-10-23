@@ -1,0 +1,9 @@
+{
+  "clip": "walk1_subject1",
+  "checkpoint": "m5_lafan1_21000.pt",
+  "video": "assets/videos/walk1_subject1.mp4",
+  "frames": 500,
+  "fps": 25,
+  "steps": 1000,
+  "failed": false
+}

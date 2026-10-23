@@ -1,0 +1,119 @@
+{
+  "checkpoint_iteration": 10000,
+  "wm_batch": 128,
+  "wm_horizon": 8,
+  "policy_batch": 32,
+  "policy_horizon": 32,
+  "obs_noise_for_parity": false,
+  "checks": {
+    "cpu_eager": {
+      "wm_loss": {
+        "max_abs": 0.0,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "wm_gradient": {
+        "max_abs": 0.0,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "policy_loss": {
+        "max_abs": 0.0,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "policy_gradient": {
+        "max_abs": 0.0,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "imag_states": {
+        "max_abs": 0.0,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "imag_rewards": {
+        "max_abs": 0.0,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "values": {
+        "wm_loss": 4.029454231262207,
+        "policy_loss": -0.14104071259498596
+      }
+    },
+    "mps_eager": {
+      "wm_loss": {
+        "max_abs": 4.76837158203125e-07,
+        "relative_l2": 1.1833790125592714e-07,
+        "finite": true
+      },
+      "wm_gradient": {
+        "max_abs": 1.621246337890625e-05,
+        "relative_l2": 2.153627519874135e-06,
+        "finite": true
+      },
+      "policy_loss": {
+        "max_abs": 2.9802322387695312e-08,
+        "relative_l2": 2.11302975117178e-07,
+        "finite": true
+      },
+      "policy_gradient": {
+        "max_abs": 3.976747393608093e-07,
+        "relative_l2": 2.314141602255404e-05,
+        "finite": true
+      },
+      "imag_states": {
+        "max_abs": 0.00026226043701171875,
+        "relative_l2": 4.108037956029875e-06,
+        "finite": true
+      },
+      "imag_rewards": {
+        "max_abs": 1.9138678908348083e-07,
+        "relative_l2": 5.481094831338851e-07,
+        "finite": true
+      },
+      "values": {
+        "wm_loss": 4.029454708099365,
+        "policy_loss": -0.14104068279266357
+      }
+    },
+    "mps_compiled": {
+      "wm_loss": {
+        "max_abs": 9.5367431640625e-07,
+        "relative_l2": 2.3667580251185427e-07,
+        "finite": true
+      },
+      "wm_gradient": {
+        "max_abs": 2.288818359375e-05,
+        "relative_l2": 3.0421451810980216e-06,
+        "finite": true
+      },
+      "policy_loss": {
+        "max_abs": 2.9802322387695312e-08,
+        "relative_l2": 2.11302975117178e-07,
+        "finite": true
+      },
+      "policy_gradient": {
+        "max_abs": 3.1385570764541626e-07,
+        "relative_l2": 2.2608694052905776e-05,
+        "finite": true
+      },
+      "imag_states": {
+        "max_abs": 0.00020122528076171875,
+        "relative_l2": 3.877419203490717e-06,
+        "finite": true
+      },
+      "imag_rewards": {
+        "max_abs": 1.4901161193847656e-07,
+        "relative_l2": 5.328546990313043e-07,
+        "finite": true
+      },
+      "values": {
+        "wm_loss": 4.029455184936523,
+        "policy_loss": -0.14104068279266357
+      }
+    }
+  },
+  "seconds": 138.22517609596252
+}
