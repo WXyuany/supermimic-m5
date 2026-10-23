@@ -80,6 +80,8 @@ bash scripts/macos/train.sh
 | 完整评测 | `logs/evaluation/benchmark.json` |
 | 控制台记录 | `logs/m5_stage1.console.log` / `logs/m5_stage2.console.log` |
 
+可先运行 `bash scripts/macos/train.sh --smoke`：在独立 `logs/smoke_stage*` 中执行 50 步训练和续训到 100 步，检查真实 MPS 更新、阶段切换与有限权重，不启动数小时正式训练。首次编译耗时另计。
+
 另开终端查看训练曲线：
 
 ```bash

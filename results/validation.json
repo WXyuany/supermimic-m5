@@ -61,5 +61,16 @@
     "interpretation": "execution succeeded; average agrees to 4 decimals, but per-clip termination is not bitwise reproducible"
   },
   "release_download": "pending publication",
-  "limits": "Not a second full-length retraining. Other macOS versions/chips and bitwise deterministic scores are unverified."
+  "limits": "Not a second full-length retraining. Other macOS versions/chips and bitwise deterministic scores are unverified.",
+  "training_entrypoint": {
+    "command": "bash scripts/macos/train.sh --smoke",
+    "status": "passed",
+    "shell": "macOS /bin/bash 3.2",
+    "stage1_iteration": 50,
+    "stage1_updates": 4,
+    "stage2_iteration": 100,
+    "stage2_updates": 8,
+    "finite_parameters": true,
+    "empty_array_nounset_compatibility": "fixed and executed successfully"
+  }
 }
