@@ -99,7 +99,7 @@ bash scripts/macos/tensorboard.sh
 
 上游主要面向 CUDA。本版本把 CPU 仿真与 MPS 学习分开，增加跨设备 replay/动作传输、设备同步、Metal 编译融合限制、原子检查点与恢复预热。网络和奖励主体沿用上游。详细改动、数值对照和故障处理见 [复现说明](docs/REPRODUCIBILITY.md)。
 
-Python 3.12.15、torch 2.14.1、MuJoCo 3.16.0、Warp 1.18.0 固定版本，mjlab 与数据固定到不可变 commit。新环境、数据转换、推理及视频验证见 [验证记录](results/validation.json)。其他芯片、系统或依赖版本，以及重新训练后逐位一致的分数，不在已验证范围内。
+Python 3.12.15、torch 2.14.1、MuJoCo 3.16.0、Warp 1.18.0 固定版本，mjlab 与数据固定到不可变 commit。已从公开 HTTPS 仓库重新克隆，按上述安装与默认演示流程完整跑通：匿名下载模型、SHA256 校验、40条数据转换、20秒视频生成均通过。具体新环境、训练恢复及评测验证见 [验证记录](results/validation.json)。其他芯片、系统或依赖版本，以及重新训练后逐位一致的分数，不在已验证范围内。
 
 ## 来源与许可
 

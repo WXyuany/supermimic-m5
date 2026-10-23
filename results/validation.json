@@ -60,7 +60,13 @@
     ],
     "interpretation": "execution succeeded; average agrees to 4 decimals, but per-clip termination is not bitwise reproducible"
   },
-  "release_download": "pending publication",
+  "release_download": {
+    "status": "passed",
+    "url": "https://github.com/WXyuany/supermimic-m5/releases/download/v0.1.0/m5_lafan1_21000.pt",
+    "authentication": "none; public urllib download",
+    "bytes": 215678483,
+    "sha256": "4bc2bd71e4809997b704293d5a8c8e8bf5715fe0c3a27a053a895a1eff418832"
+  },
   "limits": "Not a second full-length retraining. Other macOS versions/chips and bitwise deterministic scores are unverified.",
   "training_entrypoint": {
     "command": "bash scripts/macos/train.sh --smoke",
@@ -72,5 +78,18 @@
     "stage2_updates": 8,
     "finite_parameters": true,
     "empty_array_nounset_compatibility": "fixed and executed successfully"
+  },
+  "public_repository_quickstart": {
+    "status": "passed",
+    "source_commit": "a154e5636e361696ee5d54794ca914873da71260",
+    "clone": "public HTTPS, credential helper disabled",
+    "install": "bash scripts/macos/setup.sh; new local uv bootstrap and new virtual environment, all 40 clips downloaded and converted",
+    "demo": "bash scripts/macos/demo.sh; only automatic video opening disabled for validation",
+    "frames": 500,
+    "fps": 25,
+    "seconds": 20,
+    "simulation_steps": 1000,
+    "failed": false,
+    "checked_at": "2026-10-23T19:18:00+08:00"
   }
 }
